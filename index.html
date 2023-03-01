@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>scatchcat</title>
+
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <!-- cat icon -->
+  <link rel="icon" href="images/cat.svg">
+
+  <!-- style-sheet obviously lol -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section id="title"> <!--For new sections always create a section with an ID-->
+
+    <!----------------------------------------- Navbar ----------------------------------------->
+
+    <div class="container-fluid"> <!--Container for title section-->
+
+      <!-- styling, inline for large screen -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Branding button-->
+        <a class="navbar-brand fs-1" href="">scratchcat</a>
+        <!-- collapse menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- burger contained list -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- ms-auto = margin start auto (centers elements) -->
+          <ul class="navbar-nav ms-auto fs-4">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <!----------------------------------------- Title ----------------------------------------->
+
+      <!-- row makes responsive elements -->
+      <div class="row"> 
+
+        <!-- col-lg-7 = space taken on large screen -->
+        <div class="title-h1 col-lg-7">
+
+          <!-- title header --> 
+          <h1>Send purrrfect pics <br> to feline friends.</h1>
+
+          <!-- Apple logo download button -->
+          <button type="button" class="download-button btn btn-lg btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" fill="currentColor" class="logo bi-apple" viewBox="0 0 16 16">
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+              <path
+                d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+            </svg> Download</button>
+
+          <!-- Play logo download button -->  
+          <button type="button" class="download-button btn btn-lg btn-outline-light"><svg
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="logo bi-google-play"
+              viewBox="0 0 16 16">
+              <path
+                d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+            </svg> Download</button>
+
+        </div>
+
+        <!-- Title image phone-cat -->
+        <div class="title-image-container col-lg-5">
+          <img class="title-image" src="images/iphone6miguel.png" alt="iphone-mockup">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!----------------------------------------- Features ----------------------------------------->
+
+  <section id="features">
+
+    <!-- Row of features -->
+    <div class="row feature-row">
+
+      <!-- Feature No.1 -->
+      <div class="feature-box col-lg-4">
+
+        <!-- Tick icon -->
+        <svg class="feature-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px"
+          viewBox="0 0 24 24" aria-labelledby="circleOkIconTitle" stroke-width="2.25" stroke-linecap="round"
+          stroke-linejoin="round" fill="none">
+          <polyline points="7 13 10 16 17 9" />
+          <circle cx="12" cy="12" r="10" />
+        </svg>
+
+        <!-- Feature header & description -->  
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your cat could do it.</p>
+
+      </div>
+
+      <!-- Feature No.2 -->
+      <div class="feature-box col-lg-4">
+
+        <!-- Client icon -->
+        <svg class="feature-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px"
+          viewBox="0 0 24 24" aria-labelledby="contactBookIconTitle" stroke-width="2.25" stroke-linecap="round"
+          stroke-linejoin="round" fill="none">
+          <path d="M8,3 L8,21" />
+          <path
+            d="M20,2.99999899 L20,21 L6,21 C4.8954305,21 4,20.1045695 4,19 L4,4.99999899 C4,3.89542949 4.8954305,2.99999899 6,2.99999899 L20,2.99999899 Z" />
+          <path
+            d="M8,17 C8,15 11.3333333,15.3333333 12.6666667,14 C13.3333333,13.3333333 11.3333333,13.3333333 11.3333333,10 C11.3333333,7.778 12.222,6.66666667 14,6.66666667 C15.778,6.66666667 16.6666667,7.778 16.6666667,10 C16.6666667,13.3333333 14.6666667,13.3333333 15.3333333,14 C16.6666667,15.3333333 20,15 20,17" />
+        </svg>
+
+        <!-- Feature header & description -->
+        <h3>Elite Clientele.</h3>
+        <p>We have all the cats, the greatest cats.</p>
+
+      </div>
+
+      <!-- Feature No.3 -->
+      <div class="feature-box col-lg-4">
+
+        <!-- Thumbs-up icon -->
+        <svg class="feature-icon" role="img" xmlns="http://www.w3.org/2000/svg" width="96px" height="96px"
+          viewBox="0 0 24 24" aria-labelledby="thumbUpIconTitle" stroke-width="2.25" stroke-linecap="round"
+          stroke-linejoin="round" fill="none">
+          <path
+            d="M8,8.73984815 C8,8.26242561 8.17078432,7.80075162 8.4814868,7.43826541 L13.2723931,1.84887469 C13.7000127,1.34998522 14.4122932,1.20614658 15,1.5 C15.5737957,1.78689785 15.849314,2.45205792 15.6464466,3.06066017 L14,8 L18.6035746,8 C18.7235578,8 18.8432976,8.01079693 18.9613454,8.03226018 C20.0480981,8.22985158 20.7689058,9.27101818 20.5713144,10.3577709 L19.2985871,17.3577709 C19.1256814,18.3087523 18.2974196,19 17.3308473,19 L10,19 C8.8954305,19 8,18.1045695 8,17 L8,8.73984815 Z" />
+          <path d="M4,18 L4,9" />
+        </svg>
+
+        <!-- Feature header & description -->
+        <h3>Expressive.</h3>
+        <p>Whatever feeling, scratchy or mouse-catchy.</p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!----------------------------------------- Testimonials ----------------------------------------->
+
+  <section id="testimonials">
+
+    <!-- Review-carousel div -->
+    <div id="carouselExample" class="carousel slide" data-ride="false">
+
+      <!-- Carousel contents -->
+      <div class="carousel-inner">
+
+        <!-- Hugo's review -->
+        <div class="carousel-item active">
+          <h2>"I no longer have cat fights in the garden. I can scratch a cat through ScratchCat. Meow."</h2>
+          <img class="testimonial-image d-inline-block" src="images/Hugo Cute.jpg" alt="cat-profile">
+          <em>Hugo, Manchester</em>
+        </div>
+
+        <!-- Sarah's review -->
+        <div class="carousel-item">
+          <h2 class="testimonial-text">"My Cat was always a poser, now with Scratchcat's help, she's the true model of
+            my neighbourhood!"</h2>
+          <img class="testimonial-image-2" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Sarah, London</em>
+        </div>
+
+      </div>
+
+      <!-- left carousel button -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <!-- right carousel button -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </section>
+
+
+  <!----------------------------------------- Reviews&Press ----------------------------------------->
+
+  <section id="press">
+
+    <!-- Press logo images -->
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!----------------------------------------- Pricing ----------------------------------------->
+
+  <section id="pricing">
+
+    <!-- Pricing header & description -->
+    <h2>A Plan for Every Cat's Needs</h2>
+    <p class="plan-description">Simple and affordable price plans for every cat.</p>
+
+    <!-- Row div to organise Cards -->
+    <div class="row row-cols-1 mb-3 text-center">
+
+      <!-- Free pay option -->
+      <div class="col col-lg-4 col-md-6"> <!-- responsive attributes -->
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Siamese</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">Free</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>5 Scratches Per Day</li>
+              <li>10 Pictures Per Day</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-warning">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mid pay option -->
+      <div class="col col-lg-4 col-md-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Egyptian Mau</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">$49/mo</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Unlimited Scratches</li>
+              <li>Unlimited Pictures</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expensive pay option -->
+      <div class="col col-lg-4 col-md-12">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Persian</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">$99/mo</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Range of face-changers</li>
+              <li>Unlimited Scratches+Pics</li>
+              <li>Unlimited App Usage</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-warning">Sign Up</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!----------------------------------------- Call to Action ----------------------------------------->
+
+  <section id="cta">
+
+    <!-- call to action header -->
+    <h3 class="cta-h3">Send the purrfect scratch to the purrfect cat, today.</h3>
+    
+    <!-- download button with apple icon -->
+    <button type="button" class="download-button-cta btn btn-lg btn-dark"><svg xmlns="http://www.w3.org/2000/svg"
+        width="20" height="20" fill="currentColor" class="logo bi-apple" viewBox="0 0 16 16">
+        <path
+          d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+        <path
+          d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+      </svg> Download</button>
+    
+    <!-- download button with apple icon -->
+    <button type="button" class="download-button-cta btn btn-lg btn-light"><svg xmlns="http://www.w3.org/2000/svg"
+        width="20" height="20" fill="currentColor" class="logo bi-google-play" viewBox="0 0 16 16">
+        <path
+          d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+      </svg> Download</button>
+
+  </section>
+
+
+  <!----------------------------------------- Footer ----------------------------------------->
+
+  <footer id="footer">
+
+    <!-- Twitter icon -->
+    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000"
+      viewBox="0 0 256 256">
+      <rect width="256" height="256" fill="none"></rect>
+      <path
+        d="M128,88c0-22,18.5-40.3,40.5-40a40,40,0,0,1,36.2,24H240l-32.3,32.3A127.9,127.9,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,88,48Z"
+        fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+    </svg>
+
+    <!-- facebook icon -->
+    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000"
+      viewBox="0 0 256 256">
+      <rect width="256" height="256" fill="none"></rect>
+      <circle cx="128" cy="128" r="96" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="16"></circle>
+      <path d="M168,88H152a23.9,23.9,0,0,0-24,24V224" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></path>
+      <line x1="96" y1="144" x2="160" y2="144" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></line>
+    </svg>
+
+    <!-- instagram icon -->
+    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000"
+      viewBox="0 0 256 256">
+      <rect width="256" height="256" fill="none"></rect>
+      <circle cx="128" cy="128" r="40" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle>
+      <rect x="36" y="36" width="184" height="184" rx="48" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></rect>
+      <circle cx="180" cy="76" r="12"></circle>
+    </svg>
+
+    <!-- email icon -->
+    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#000000"
+      viewBox="0 0 256 256">
+      <rect width="256" height="256" fill="none"></rect>
+      <polyline points="224 56 128 144 32 56" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></polyline>
+      <path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z" fill="none"
+        stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
+      <line x1="110.5" y1="128" x2="34.5" y2="197.7" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></line>
+      <line x1="221.5" y1="197.7" x2="145.5" y2="128" fill="none" stroke="#000000" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="16"></line>
+    </svg>
+
+    <p>© Copyright scratchcat</p>
+
+  </footer>
+
+</body>
+
+</html>
